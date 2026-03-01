@@ -1,0 +1,20 @@
+﻿@model List<Doctor>
+
+<h1>Lista de Doctores</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Especialidad</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Doctor doctor in Model)
+        {
+            <tr>
+                <td>@doctor.Apellido</td>
+                <td>@doctor.Especialidad</td>
+            </tr>
+        }
+    </tbody>
+</table>
